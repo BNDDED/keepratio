@@ -7,6 +7,5 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
     },
     sitemap: "https://keepratio.com/sitemap.xml",
-    host: "https://keepratio.com",
   };
 }

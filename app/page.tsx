@@ -1,4 +1,3 @@
-import { AdSlot } from "@/components/ad-slot";
 import { FaqList } from "@/components/faq-list";
 import { HowTo } from "@/components/how-to";
 import { RatioWorkspace } from "@/components/ratio-workspace";
@@ -79,9 +78,6 @@ export default function HomePage() {
       <HowTo />
       <UseCases />
       <FaqList />
-      <div className="shell pb-4">
-        <AdSlot id="near-end" tall />
-      </div>
     </main>
   );
 }

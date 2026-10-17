@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { AdSlot } from "@/components/ad-slot";
 import { FramePreview } from "@/components/frame-preview";
 import { PresetTable } from "@/components/preset-table";
 import { PRESETS, presetMatches, type Preset } from "@/lib/presets";
@@ -270,11 +269,7 @@ export function RatioWorkspace() {
         </form>
       </section>
 
-      <div className="shell py-8">
-        <AdSlot id="below-tool" />
-      </div>
-
-      <section id="presets" className="shell scroll-mt-24 pb-4">
+      <section id="presets" className="shell scroll-mt-24 pt-14 pb-4">
         <h2 className="font-display text-3xl tracking-tight sm:text-4xl">
           Preset sizes in real pixels
         </h2>

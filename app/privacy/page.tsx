@@ -58,10 +58,9 @@ export default function PrivacyPage() {
         <section>
           <h2 className="font-display text-2xl">Advertisements</h2>
           <p className="mt-2 text-muted">
-            The advertisement areas on the calculator page are empty placeholders.
-            They do not load an ad network in this version. If a later version
-            loads a third-party ad provider, this policy will name that provider
-            and what it may collect.
+            KeepRatio does not show advertisements in this version and does not
+            load an ad network. If a later version loads a third-party ad
+            provider, this policy will name that provider and what it may collect.
           </p>
         </section>
         <section>
