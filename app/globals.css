@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --color-paper: #e7e1d5;
+  --color-raised: #f6f2ea;
+  --color-ink: #1b1714;
+  --color-muted: #433e36;
+  --color-line: #d3ccc0;
+  --color-signal: #c83a22;
+  --color-moss: #1c6a44;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  overflow-x: clip;
+}
+
+::selection {
+  background: #f0c7be;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.shell {
+  width: min(1120px, calc(100% - 2rem));
+  max-width: calc(100% - 2rem);
+  margin-inline: auto;
+}
+
+.field {
+  width: 100%;
+  border: 1px solid var(--color-line);
+  background: #fffdf8;
+  padding: 0.8rem 0.9rem;
+  font-size: 1.65rem;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-ink);
+  border-radius: 2px;
+}
+
+.field:focus {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
+
+.copy-btn {
+  flex: none;
+  border: 1px solid var(--color-ink);
+  background: transparent;
+  color: var(--color-ink);
+  padding: 0.45rem 0.7rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+.copy-btn[data-copied="true"] {
+  background: var(--color-ink);
+  color: var(--color-raised);
+}
+
+.frame-mark {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: var(--color-signal);
+  border-style: solid;
+}
+
+.frame-mark-tl {
+  top: -7px;
+  left: -7px;
+  border-width: 2px 0 0 2px;
+}
+
+.frame-mark-tr {
+  top: -7px;
+  right: -7px;
+  border-width: 2px 2px 0 0;
+}
+
+.frame-mark-bl {
+  bottom: -7px;
+  left: -7px;
+  border-width: 0 0 2px 2px;
+}
+
+.frame-mark-br {
+  right: -7px;
+  bottom: -7px;
+  border-width: 0 2px 2px 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
